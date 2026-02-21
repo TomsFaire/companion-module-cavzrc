@@ -1,0 +1,7 @@
+node_modules/
+dist/
+pkg/
+.repack-temp/
+*.tgz
+*.log
+.DS_Store
