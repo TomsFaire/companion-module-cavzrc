@@ -46,6 +46,27 @@ The module will now appear when adding a connection. You can edit code, run `npm
 
 ---
 
+## Building a package for other machines
+
+To test the module on another computer (without cloning the repo or using the developer path):
+
+1. **On your dev machine**, in this repo:
+   ```bash
+   npm run package
+   ```
+   This builds the module and produces **`zoom-rooms-0.0.1.tgz`** in the project root (version matches `package.json`).
+
+2. **Copy the `.tgz`** to the other machine (USB, cloud, etc.).
+
+3. **On the other machine**, in Companion:
+   - Go to **Modules** → **Import module package** and select the `.tgz` file.
+   - Go to **Connections** → **Add connection** → **Zoom** → **CAVZRC Companion module**.
+   - Configure Host, CAVZRC Receiving Port, and Companion listen port to match that machine's CAVZRC/network.
+
+No repo or dev setup is required on the other machine.
+
+---
+
 ## Adding a connection (where to find it)
 
 The module does **not** show up as a separate “connection” until you **add** one:
