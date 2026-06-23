@@ -1,7 +1,7 @@
 {
   "name": "companion-module-zoom-rooms",
-  "version": "0.0.1",
-  "description": "CAVZRC Companion module — control Zoom Rooms via OSC (alpha)",
+  "version": "0.0.4",
+  "description": "CAVZRC Companion module \u2014 control Zoom Rooms via OSC (alpha)",
   "main": "dist/index.js",
   "scripts": {
     "package": "npm run build && companion-module-build && node scripts/repack-for-companion.js",

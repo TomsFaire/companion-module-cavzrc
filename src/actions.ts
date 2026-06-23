@@ -79,9 +79,9 @@ export function GetActions(instance: ZoomRoomsInstance): CompanionActionDefiniti
         { type: 'textinput', label: 'Room ID', id: 'roomID', default: '', isVisible: (o) => o.targetType === 'roomID' },
         { type: 'textinput', label: 'Room name', id: 'roomName', default: '', isVisible: (o) => o.targetType === 'roomName' },
         { type: 'number', label: 'Room index (1-based)', id: 'roomIndex', default: 1, min: 1, max: 999, isVisible: (o) => o.targetType === 'roomIndex' },
-        { type: 'textinput', label: 'Meeting ID', id: 'meetingID', default: '' },
-        { type: 'textinput', label: 'Meeting password', id: 'meetingPass', default: '' },
-        { type: 'textinput', label: 'User name', id: 'userName', default: '' },
+        { type: 'textinput', label: 'Meeting ID', id: 'meetingID', default: '', useVariables: true },
+        { type: 'textinput', label: 'Meeting password', id: 'meetingPass', default: '', useVariables: true },
+        { type: 'textinput', label: 'User name', id: 'userName', default: '', useVariables: true },
       ],
       callback: (action) => {
         const opt = action.options
